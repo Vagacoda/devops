@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/vagacoda/guestbook:917d200
+          image: ghcr.io/vagacoda/guestbook:057b46f
           ports:
             - containerPort: 5000
           envFrom:
