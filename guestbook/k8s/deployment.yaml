@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: guestbook
@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: guestbook
+      annotations:
+        project/config-revision: "1"
     spec:
       containers:
         - name: web
