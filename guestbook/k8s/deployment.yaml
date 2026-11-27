@@ -40,7 +40,7 @@ spec:
             failureThreshold: 3
           readinessProbe:
             httpGet:
-              path: /readyz-broken
+              path: /readyz
               port: 5000
             initialDelaySeconds: 3
             periodSeconds: 5
